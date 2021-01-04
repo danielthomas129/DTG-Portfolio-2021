@@ -163,6 +163,10 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
 /* PORTFOLIO PAGE */
+.tabs{
+  align-items: center;
+  text-align: center;
+}
 .port-image {
   margin: 20px auto;
   box-shadow: #2E2E2E;
