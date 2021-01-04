@@ -1,0 +1,248 @@
+/* --- STYLES FOR ALL PAGES --- */
+body {
+  /* Typography */
+  font-family: 'Staatliches', cursive;
+  /* Visual */
+  background-image: url("../imgs/g1.jpeg");
+}
+
+html {
+  /* Positioning */
+  position: relative;
+
+  /* Box-model */
+  min-height: 100%;
+}
+
+/* add space for fixed nav */
+main {
+  margin: 80px 0;
+}
+
+/* create styles for use for all white main boxes */
+.block {
+  /* background-color: #464646; */
+  background-image: url("../imgs/w1.jpg");
+  border-radius: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.block-header {
+  /* Typography */
+  color: #464646;
+  font-family: 'Staatliches', cursive;  font-weight: bolder;
+  border-radius: 25px;
+
+}
+
+/* NAV START */
+#logo {
+  font-family: 'Staatliches' !important;
+  /* Typography */
+  font-size: 40px;
+  font-weight: bolder;
+  color: #464646;
+  font-stretch: wider;
+
+  /* Visual */
+/* background: #464646; */
+}
+
+/* override bootstrap hover color and border */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #464646;
+  border-radius: 25px;
+
+}
+
+.navbar {
+  background: #464646;
+  background-image: url("../imgs/gw.png") !important;
+  border: #464646;
+  border-radius: 25px;
+
+}
+
+/* media query for nav background color change */
+@media only screen and (max-width: 767px) {
+  .navbar-header {
+    background-color: #464646;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+  }
+}
+/* END NAV */
+
+
+/* CONNECT W/ ME CSS */
+.connect-header {
+  /* Typography */
+  font-size: 25px;
+}
+
+.connect-photo {
+  /* Box-model */
+  width: 55px;
+  height: 55px;
+}
+
+#images {
+  /* Box-model */
+  padding-top: 15px;
+
+  /* Typography */
+  text-align: center;
+}
+/* END CONNECT W/ ME */
+
+
+/* BEGIN FOOTER */
+.footer {
+  /* Positioning */
+  position: absolute;
+  bottom: 0;
+
+  /* Box-model */
+  width: 100%;
+  height: 60px;
+
+  /* Visual */
+  /* background-color: rgb(46, 46, 46); */
+  background-image: url("../imgs/s1.jpg");
+
+}
+
+.text-muted-footer {
+  /* Box-model */
+  margin-top: 15px;
+
+  /* Typography */
+  color: white;
+
+}
+
+.two-toned-footer-color {
+  /* Box-model */
+  height: 6px;
+  padding-top: 3px;
+
+
+  /* Visual */
+  background-image: url("../imgs/o1.jpg");
+}
+/* END FOOTER */
+/* --- END STYLES FOR ALL PAGES --- */
+
+/* --- PAGE-SPECIFIC STYLES --- */
+/* ABOUT-ME PAGE */
+.about-me-header {
+  /* Positioning */
+  margin-bottom: 33px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  /* Typography */
+  font-size: 32px;
+  font-weight: bolder;
+  color: #2E2E2E;
+}
+
+#about-image {
+  /* Positioning */
+  float: left;
+
+  /* Box-model */
+  width: 200px;
+  margin: 0 20px 10px 0;
+  border-radius: 25px;
+  box-shadow: #2E2E2E;
+
+}
+/* END ABOUT-ME PAGE */
+
+
+/* PORTFOLIO PAGE */
+.port-image {
+  margin: 20px auto;
+  box-shadow: #2E2E2E;
+}
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Staatliches' !important;
+  font-size: 20px;
+}
+
+/* Style tab links */
+.tablink {
+  /* background-color: #555; */
+  background-image: url("../imgs/g1.jpg");
+  background-size: cover;
+  border-radius: 25px;
+  color: #464646;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 25px;
+  font-family: 'Staatliches' !important;
+font-stretch: extra-expanded;  
+width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #464646;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* display: none; */
+  padding: 100px 20px;
+  height: 100%;
+  border-radius: 25px;
+
+}
+
+#Portfolio {background-image: url("../imgs/w1.jpg");}
+#PICKY {background-image: url("../imgs/w1.jpg");}
+#Weather {background-image: url("../imgs/w1.jpg");}
+#Password {background-image: url("../imgs/w1.jpg");}
+
+
+/* END PORTFOLIO PAGE */
+
+
+/* CONTACT FORM PAGE  */
+.form-control {
+  /* give input boxes right angles */
+  border-radius: 0;
+
+  /* keep from horizontally resizing text area */
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.submit-btn {
+  /* Box-model */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: lighter;
+
+  /* Typography */
+  /* color: #fff; */
+
+  /* Visual */
+  /* background-color: #2E2E2E; */
+  border: 100;
+}
+
+.submit-btn:hover {
+  opacity: .7;
+}
+
+/* END CONTACT FORM PAGE */
