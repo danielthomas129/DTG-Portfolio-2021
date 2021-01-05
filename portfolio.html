@@ -51,14 +51,16 @@
       <!-- End of navbar -->
 
   <!-- Start of container -->
-  <div class="container tabs">
+  <div class="container tabs ">
     <main class="row">
-      <div class="col-md-12 mx-auto">
-        <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('Portfolio')" id="portfolio defaultOpen">Portfolio</button>
+      <div class="col-md-12">
+        <div class="nav nav-tabs wrap nav-fill flex-column flex-sm-row">
+        <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('Portfolio')" id="portfolio">Portfolio</button>
         <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('PICKY')" id="picky">PICKY</button>
         <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('Weather')" id="weather">Weather Dashboard</button>
         <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('Password')" id="password">Password Generator</button>
-        
+        </div>
+
         <div id="Portfolio" class="tabcontent">
           <h3>Web Development Portfolio</h3>
           <p>Home is where the heart is..</p>
@@ -68,36 +70,68 @@
         </div>
         
         <div id="PICKY" class="tabcontent">
-          <h3>PICKY</h3>
-          <p>Some news this fine day!</p>
+          <h1>PICKY</h>
+          
           <a href="https://github.com/ncastaldi/project1">
             <img src="assets/imgs/github.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github
             </a>
             <a href="https://www.castaldi.dev/project1/index.html">
               <img src="assets/imgs/gh.jpg" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github IO
               </a>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/picky-app.png" width="50" height="500" class="d-block w-100" alt="...">
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         
         <div id="Weather" class="tabcontent">
-          <h3>Weather Dashboard</h3>
-          <p>Get in touch, or swing by for a cup of coffee.</p>
+          <h1>Weather Dashboard</h1>
+      
           <a href="https://github.com/danielthomas129/Weather-Dashboard-API">
-            <img src="assets/imgs/github.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github Repository
+            <img src="assets/imgs/github.png"class="card-img-top"  id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github Repository
             </a>
             <a href="https://danielthomas129.github.io/Weather-Dashboard-API/">
               <img src="assets/imgs/gh.jpg" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github IO
               </a>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/imgs/weather.png" width="50" height="500" class="d-block w-100" alt="...">
+                    
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+  
         </div>
         
         <div id="Password" class="tabcontent">
-          <h3>Password Generator</h3>
-          <p>Who we are and what we do.</p>
+          <h1>Password Generator</h1>
           <a href="https://github.com/danielthomas129/sec-password-generator">
             <img src="assets/imgs/github.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github Repository
             </a>
             <a href="https://danielthomas129.github.io/sec-password-generator/">
               <img src="assets/imgs/gh.jpg" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github IO
               </a>
+                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/imgs/pwd.png" width="50" height="500" class="d-block w-100" alt="...">
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
         </div>
       </div>
     </main>
