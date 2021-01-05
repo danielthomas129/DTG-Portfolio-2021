@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,105 +55,90 @@
     <main class="row">
       <div class="col-md-12">
         <div class="nav nav-tabs wrap nav-fill flex-column flex-sm-row">
-        <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('Portfolio')" id="portfolio">Portfolio</button>
-        <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('PICKY')" id="picky">PICKY</button>
-        <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('Weather')" id="weather">Weather Dashboard</button>
-        <button class="tablink btn btn-outline-dark" data-mdb-ripple-color="dark" onclick="openPage('Password')" id="password">Password Generator</button>
+        <button class="tablink btn block" onclick="openPage('Portfolio')" id="defaultOpen">Portfolio</button>
+        <button class="tablink btn block" onclick="openPage('PICKY')" id="picky">PICKY</button>
+        <button class="tablink btn block" onclick="openPage('Weather')" id="weather">Weather Dashboard</button>
+        <button class="tablink btn block" onclick="openPage('Password')" id="password">Password Generator</button>
         </div>
 
         <div id="Portfolio" class="tabcontent">
           <h3>Web Development Portfolio</h3>
-          <p>Home is where the heart is..</p>
+          <p>I live to create</p>
           <a href="https://github.com/danielthomas129">
             <img src="assets/imgs/github.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github
             </a>
+            <a href="https://docs.google.com/document/d/1y-RjGFHzKfZxiMaW_7ag79V-THFbk2RGatbTLg4O_oI/edit?usp=sharing">
+              <img src="assets/imgs/resume.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Resume
+              </a>
+              <a href="https://linkedin.com/in/danieltguadalupe">
+                <img src="assets/imgs/linkedin.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">LinkedIn
+                </a>
         </div>
         
         <div id="PICKY" class="tabcontent">
-          <h1>PICKY</h>
-          
+          <h1>PICKY</h1>
+          <p>This app was designed to help busy people find recipes quickly while still being mindful of allergies and diet preferences, and allowing them the access to email themselves ingredients required.</p>
           <a href="https://github.com/ncastaldi/project1">
             <img src="assets/imgs/github.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github
             </a>
             <a href="https://www.castaldi.dev/project1/index.html">
-              <img src="assets/imgs/gh.jpg" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github IO
+              <img src="assets/imgs/gh.jpg" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Resume
               </a>
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/imgs/picky-app.png" width="50" height="500" class="d-block w-100" alt="...">
-                    
-                    
-                  </div>
-                </div>
+              <div class="box">
+                <img src="assets/imgs/picky-app.png" alt="Example image"/>
               </div>
             </div>
-        </div>
+        
         
         <div id="Weather" class="tabcontent">
           <h1>Weather Dashboard</h1>
-      
+      <p>This application was created to find a weather condition of a given city both the current and 5-Days forecast at the same time.
+        The server-side API used to get response data object is retrieved from the Open Weather APi.</p>
           <a href="https://github.com/danielthomas129/Weather-Dashboard-API">
             <img src="assets/imgs/github.png"class="card-img-top"  id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github Repository
             </a>
             <a href="https://danielthomas129.github.io/Weather-Dashboard-API/">
               <img src="assets/imgs/gh.jpg" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github IO
               </a>
-              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/imgs/weather.png" width="50" height="500" class="d-block w-100" alt="...">
-                    
-                    
-                  </div>
-                </div>
+              <div class="box">
+                <img src="assets/imgs/weather.png" alt="Example image"/>
               </div>
             </div>
   
-        </div>
         
         <div id="Password" class="tabcontent">
           <h1>Password Generator</h1>
+          <p>This Secure Password Generator was created for companies that handle sensitive data and their employees to ensure that a strong password is used. </p>
           <a href="https://github.com/danielthomas129/sec-password-generator">
             <img src="assets/imgs/github.png" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github Repository
             </a>
             <a href="https://danielthomas129.github.io/sec-password-generator/">
               <img src="assets/imgs/gh.jpg" id=linkText alt="HTML tutorial" style="width:42px;height:42px;align-items: center;">Github IO
               </a>
-                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./assets/imgs/pwd.png" width="50" height="500" class="d-block w-100" alt="...">
-                  
-                  
-                </div>
+              <div class="box">
+                <img src="assets/imgs/pwd.png" alt="Example image"/>
               </div>
-            </div>
-          </div>
-
-          
+            </div>  
         </div>
-      </div>
-    </main>
-  </div>
-  <!-- End of container -->
+      </main>
 
-  <!-- Start of footer -->
-  <footer class="footer">
-    <div class="two-toned-footer-color"></div>
-    <p class="text-muted text-muted-footer text-center">
-      &copy; Copyright 2021 Daniel Thomas Guadalupe Portfolio
-    </p>
-  </footer>
-  <!-- End of footer -->
 
-  <!-- jQuery CDN -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Javascript link -->
-  <script src="assets/js/script.js"></script>
-  <!-- Bootstrap CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
-
-</body>
-
+      <!-- Start of footer -->
+      <footer class="footer">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+          &copy; Copyright 2021 Daniel Thomas Guadalupe Portfolio
+        </p>
+      </footer>
+      <!-- End of footer -->
+    
+      <!-- jQuery CDN -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- Javascript link -->
+      <script src="assets/js/script.js"></script>
+      <!-- Bootstrap CDN -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
+    
+    </body>
+    
 </html>
