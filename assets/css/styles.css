@@ -1,20 +1,26 @@
 /* --- STYLES FOR ALL PAGES --- */
 body {
   /* Typography */
-  font-family: 'Staatliches', cursive;
+  font-family: 'Staatliches';
   /* Visual */
-  background-image: url("../imgs/blue.jpg");
-  background-size: 100%;
+  /* background-image: url("../imgs/gen.jpg"); */
+  background-color: #344841;
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 html {
   /* Positioning */
   position: relative;
-
+  background-color: #344841;
+  background-size: cover;
+  background-repeat: repeat;
   /* Box-model */
   min-height: 100%;
 }
-
+main {
+  margin: 80px 0;
+}
 /* add space for fixed nav */
 main {
   margin: 80px 0;
@@ -23,21 +29,24 @@ main {
 /* create styles for use for all white main boxes */
 .block {
   /* background-color: #464646; */
-  background-image: url("../imgs/w1.jpg");
+  background-color: #dad7cd;
   border-radius: 25px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 30px;
   margin-bottom: 30px;
+  align-content: center !important;
 }
 
 .block-header {
   /* Typography */
   color: #464646;
-  font-family: 'Staatliches', cursive;  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 25px;
-
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  align-content: center;
 }
-
 /* NAV START */
 #logo {
   font-family: 'Staatliches' !important;
@@ -46,11 +55,6 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   color: #464646 !important;
   font-stretch: wider;
-
-  /* Visual */
-/* background: #464646; */
-}
-
 /* override bootstrap hover color and border */
 .navbar-default .navbar-nav > li > a:hover {
   border-radius: 25px;
@@ -62,6 +66,8 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-image: url("../imgs/0.jpg") !important;
   border: #464646;
   border-radius: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
 
 }
 
@@ -75,7 +81,47 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* END NAV */
 
+.fad.fa-browser {
+  /* align-content: center;
+  align-items: center; */
+  font-size: 60px;
+  color: #3a5a40;
+  text-align: center;
 
+.fab.fa-github {
+  align-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #3a5a40;
+  text-align: center;
+}
+.button {
+  align-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: #3a5a40;
+  text-align: center;
+}
+/* CONNECT W/ ME CSS */
+.connect-header {
+  /* Typography */
+  font-size: 25px;
+}
+
+.connect-photo {
+  /* Box-model */
+  width: 55px;
+  height: 55px;
+}
+
+#images {
+  /* Box-model */
+  padding-top: 15px;
+  align-items: center;
+
+  /* Typography */
+  text-align: center;
+}
 /* CONNECT W/ ME CSS */
 .connect-header {
   /* Typography */
@@ -99,45 +145,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 /* END CONNECT W/ ME */
 
 
-/* BEGIN FOOTER */
-.footer {
-  /* Positioning */
-  position: fixed !important;
-  bottom: 0;
-
-  /* Box-model */
-  width: 100%;
-  height: 60px;
-
-  /* Visual */
-  /* background-color: rgb(46, 46, 46); */
-  background-image: url("../imgs/s1.jpg");
-
-}
-
-.text-muted-footer {
-  /* Box-model */
-  margin-top: 15px;
-
-  /* Typography */
-  color: white !important;
-
-}
-
-.two-toned-footer-color {
-  /* Box-model */
-  height: 6px;
-  padding-top: 3px;
 
 
-  /* Visual */
-  background-image: url("../imgs/w1.jpg");
-  background-size: contain;
-}
-/* END FOOTER */
-/* --- END STYLES FOR ALL PAGES --- */
 
-/* --- PAGE-SPECIFIC STYLES --- */
 /* ABOUT-ME PAGE */
 .about-me-header {
   /* Positioning */
@@ -162,111 +172,5 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 /* END ABOUT-ME PAGE */
-
-
-/* PORTFOLIO PAGE */
-.tabs{
-  align-items: center;
-  text-align: center;
-}
-.port-image {
-  margin: 20px auto;
-  box-shadow: #2E2E2E;
-}
-.box {
-  width: 30%;
-  height: 200px;
-  border: 5px  #f6f6f6;
-  align-items: center !important;
-  align-content: center !important;
-}
-img {
-  width: 100%;
-  height: 100%;
-  align-items: center !important;
-}
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: 'Staatliches' !important;
-  font-size: 20px;
-}
-
-/* Style tab links */
-.tablink {
-  /* background-color: #555; */
-  background-image: url("../imgs/0.jpg");
-  background-size: 100%;
-  border-radius: 25px;
-  color: #464646;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 30px;
-  font-family: 'Staatliches' !important;
-font-stretch: extra-expanded;  
-width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: #464646;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-/* display: none; */
-  padding: 100px 20px;
-  height: 100%;
-  border-radius: 25px;
-  font-size: x-large;
-  align-items: center;
-  font-weight: bolder;
-
-}
-
-#Portfolio {background-image: url("../imgs/w1.jpg");}
-#PICKY {background-image: url("../imgs/w1.jpg");}
-#Weather {background-image: url("../imgs/w1.jpg");}
-#Password {background-image: url("../imgs/w1.jpg");}
-
-.card {
-  align-content: center;
-}
-
-/* END PORTFOLIO PAGE */
-
-
-/* CONTACT FORM PAGE  */
-.form-control {
-  /* give input boxes right angles */
-  border-radius: 0;
-
-  /* keep from horizontally resizing text area */
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.submit-btn {
-  /* Box-model */
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: lighter;
-
-  /* Typography */
-  /* color: #fff; */
-
-  /* Visual */
-  /* background-color: #2E2E2E; */
-  border: 100;
-}
-
-.submit-btn:hover {
-  opacity: .7;
-}
-
 /* END CONTACT FORM PAGE */
+
